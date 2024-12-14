@@ -1,0 +1,92 @@
+/* Mengatur gaya umum untuk halaman */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #c7c7c7; /* Warna latar belakang biru navy gelap */
+    display: flex; /* Memusatkan konten secara horizontal */
+    justify-content: center; /* Memusatkan konten secara vertikal */
+    align-items: center;
+    height: 100vh; /* Mengisi tinggi viewport */
+}
+
+/* Kontainer utama aplikasi chat */
+#chat-container {
+    width: 450px; /* Lebar kontainer */
+    height: 600px; /* Tinggi kontainer */
+    background: #020a47; /* Warna latar belakang putih */
+    border-radius: 10px; /* Membulatkan sudut kontainer */
+    display: flex; /* Mengatur layout menjadi fleksibel */
+    flex-direction: column; /* Mengatur elemen dalam kolom */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+/* Kotak untuk menampilkan pesan */
+#chat-box {
+    flex: 1; /* Memenuhi ruang vertikal yang tersisa */
+    padding: 15px; /* Jarak dalam */
+    overflow-y: auto; /* Menambahkan scrollbar jika pesan melebihi tinggi */
+    border-bottom: 2px solid #ddd; /* Garis pembatas bawah */
+    margin-bottom: 10px; /* Jarak dengan elemen di bawahnya */
+}
+
+/* Gaya untuk pesan */
+#chat-box .message {
+    max-width: 80%; /* Maksimal lebar pesan */
+    margin: 5px 0; /* Jarak antar pesan */
+    padding: 8px 12px; /* Jarak dalam pesan */
+    border-radius: 18px; /* Membulatkan sudut pesan */
+    word-wrap: break-word; /* Memecah kata panjang */
+}
+
+/* Gaya untuk pesan dari pengguna lain */
+#chat-box .message.left {
+    background: #1a2630; /* Warna latar biru navy gelap */
+    color: white; /* Warna teks putih */
+    text-align: left; /* Rata kiri */
+}
+
+/* Gaya untuk pesan pengguna saat ini */
+#chat-box .message.right {
+    background: #007bff; /* Warna latar biru */
+    color: white; /* Warna teks putih */
+    text-align: right; /* Rata kanan */
+    margin-left: auto; /* Menggeser pesan ke kanan */
+}
+
+/* Gaya untuk pesan sistem */
+#chat-box .message.system {
+    font-style: italic; /* Menambahkan gaya miring */
+    color: gray; /* Warna teks abu-abu */
+    text-align: center; /* Rata tengah */
+}
+
+/* Kontainer input dan tombol kirim */
+#input-container {
+    display: flex; /* Menampilkan elemen secara horizontal */
+    justify-content: space-between; /* Memberikan ruang antara elemen */
+    padding: 10px; /* Jarak dalam */
+}
+
+/* Gaya untuk input teks */
+#chat-input {
+    border: 1px solid #ccc; /* Garis batas abu terang */
+    padding: 10px; /* Jarak dalam */
+    width: 80%; /* Lebar 80% dari kontainer */
+    border-radius: 10px; /* Membulatkan sudut */
+    font-size: 14px; /* Ukuran font */
+}
+
+/* Gaya untuk tombol kirim */
+#send-btn {
+    padding: 10px; /* Jarak dalam */
+    background: #007bff; /* Warna latar biru */
+    color: white; /* Warna teks putih */
+    border: none; /* Menghapus garis batas */
+    border-radius: 10px; /* Membulatkan sudut */
+    cursor: pointer; /* Mengubah kursor menjadi pointer */
+}
+
+/* Gaya tombol kirim saat hover */
+#send-btn:hover {
+    background: #0056b3; /* Warna biru lebih gelap */
+}
